@@ -1,0 +1,26 @@
+﻿@using HiddenVilla_Server.Model
+
+<div class="bg-light border p-2 col-5" @onclick="() => AmenitySelectionChange(Amenities)">
+    <h4 class="text-secondary">Amenity - @Amenities.Id</h4> <br/>
+    <span>@Amenities.Name</span> <br/>
+    <span>@Amenities.Description</span> <br/>
+    @FirstFragment @SecondFragment
+</div>
+
+@code {
+    [Parameter]
+    public BlazorAmenities Amenities { get; set; }
+    
+    [Parameter]
+    public EventCallback<string> OnAmenitySelected { get; set; }
+    
+    [Parameter]
+    public RenderFragment FirstFragment { get; set; }
+    [Parameter]
+    public RenderFragment SecondFragment { get; set; }
+
+    protected async Task AmenitySelectionChange(BlazorAmenities amenities)
+    {
+        await OnAmenitySelected.InvokeAsync(amenities.Name);
+    }
+}

@@ -1,0 +1,37 @@
+﻿@page "/ParentComponent"
+
+<h3 class="text-danger">Parent Child Component</h3>
+<CascadingValue Value="@messageForGrandChild" Name="MessageFromGrandParent">
+    <CascadingValue Value="LuckyNumber" Name="GrandParentLuckyNumber">
+        <ChildComponent
+            OnClickBtnMethod="ShowMessage"
+            Title="This title is passed as parameter from Parent Component">
+            <ChildContent>
+                Render Fragement From Parent! WooHoo!
+            </ChildContent>
+        </ChildComponent>
+    </CascadingValue>
+</CascadingValue>
+
+
+<AnotherChildComponent InputAttributes="InputAttributesFromParent"></AnotherChildComponent>
+
+<p><b>@messageText</b></p>
+
+@code {
+    private string messageForGrandChild = "This is a message from Grand Parent";
+    public int LuckyNumber = 7;
+    private string messageText = "";
+
+    private void ShowMessage(MouseEventArgs e)
+    {
+        messageText = "Blazzing text from parent";
+    }
+    
+    public Dictionary<string, object> InputAttributesFromParent { get; set; } = new Dictionary<string, object>()
+    {
+        {"required", "required"},
+        {"placeholder", "Parent"},
+        {"maxlength", 5}
+    };
+}
