@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{75CE81D7-08B8-4745-9717-2DFD75AC75FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIddenVila_API", "HIddenVila_API\HIddenVila_API.csproj", "{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{75CE81D7-08B8-4745-9717-2DFD75AC75FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{75CE81D7-08B8-4745-9717-2DFD75AC75FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{75CE81D7-08B8-4745-9717-2DFD75AC75FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
