@@ -55,7 +55,7 @@ public class HotelRoomRepository : IHotelRoomRepository
         }
     }
 
-    public async Task<HotelRoomDTO> GetHotelRoom(int roomId)
+    public async Task<HotelRoomDTO> GetHotelRoom(int roomId, string checkInDate = null, string checkOutDate = null)
     {
         try
         {
@@ -85,7 +85,7 @@ public class HotelRoomRepository : IHotelRoomRepository
         return 0;
     }
 
-    public async Task<IEnumerable<HotelRoomDTO>> GetAllHotelRooms()
+    public async Task<IEnumerable<HotelRoomDTO>> GetAllHotelRooms(string checkInDate = null, string checkOutDate = null)
     {
         try
         {

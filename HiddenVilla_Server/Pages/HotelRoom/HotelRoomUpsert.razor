@@ -6,7 +6,7 @@
 @inject IJSRuntime JsRuntime
 @inject IFileUpload FileUpload
 
-@attribute [Authorize(Roles = Common.SD.Role_Admin)]
+@*@attribute [Authorize(Roles = Common.SD.Role_Admin)]*@
 
 <h3>HotelRoomUpsert</h3>
 <div class="row mt-2 mb-5">
@@ -198,12 +198,12 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var authenticationState = await AuthenticationState;
-        if (!authenticationState.User.IsInRole(Common.SD.Role_Admin))
-        {
-            var uri = new Uri(NavigationManager.Uri);
-            NavigationManager.NavigateTo($"~/identity/account/login?returnUrl={uri.LocalPath}");
-        }
+        //var authenticationState = await AuthenticationState;
+        //if (!authenticationState.User.IsInRole(Common.SD.Role_Admin))
+        //{
+        //    var uri = new Uri(NavigationManager.Uri);
+        //    NavigationManager.NavigateTo($"~/identity/account/login?returnUrl={uri.LocalPath}");
+        //}
 
         if (Id != null)
         {

@@ -10,5 +10,6 @@ public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     public DbSet<HotelRoom> HotelRooms { get; set; }
     public DbSet<HotelRoomImage> HotelRoomImages { get; set; }
     public DbSet<HotelAmenity> HotelAmenities { get; set; }
-    
+    public DbSet<ApplicationUser> ApplicationUser { get; set; }
+
 }

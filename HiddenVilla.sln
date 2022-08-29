@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HiddenVilla_Server", "HiddenVilla_Server\HiddenVilla_Server.csproj", "{1C3E7B06-932C-49B0-993D-231D68882432}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiddenVilla_Server", "HiddenVilla_Server\HiddenVilla_Server.csproj", "{1C3E7B06-932C-49B0-993D-231D68882432}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{33D3D60C-93A3-4616-9457-707F7BE6BE13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{33D3D60C-93A3-4616-9457-707F7BE6BE13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{3065BBA3-E432-4F41-AF4C-382F4D53326C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models", "Models\Models.csproj", "{3065BBA3-E432-4F41-AF4C-382F4D53326C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{375D3972-1707-42AD-AE71-18CCA17B3CEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{375D3972-1707-42AD-AE71-18CCA17B3CEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{75CE81D7-08B8-4745-9717-2DFD75AC75FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{75CE81D7-08B8-4745-9717-2DFD75AC75FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIddenVila_API", "HIddenVila_API\HIddenVila_API.csproj", "{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HIddenVila_API", "HIddenVila_API\HIddenVila_API.csproj", "{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HiddenVilla_Client", "HiddenVilla_Client\HiddenVilla_Client.csproj", "{B9408AFD-16AD-4C91-83DB-F5884CFC2E40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC6F4CAC-1CB4-4267-ACE3-CC8F0E72F7E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9408AFD-16AD-4C91-83DB-F5884CFC2E40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9408AFD-16AD-4C91-83DB-F5884CFC2E40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9408AFD-16AD-4C91-83DB-F5884CFC2E40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9408AFD-16AD-4C91-83DB-F5884CFC2E40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
